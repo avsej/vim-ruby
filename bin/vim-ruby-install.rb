@@ -19,9 +19,12 @@ require 'pathname'
 
 SOURCE_FILES = %w{
   autoload/rubycomplete.vim
+  compiler/rspec.vim
   compiler/eruby.vim
   compiler/ruby.vim
   compiler/rubyunit.vim
+  doc/ft-ruby-omni.txt
+  doc/ft-ruby-syntax.txt
   ftdetect/ruby.vim
   ftplugin/eruby.vim
   ftplugin/ruby.vim
@@ -30,6 +33,7 @@ SOURCE_FILES = %w{
   syntax/eruby.vim
   syntax/ruby.vim
 }
+
 #FIXME: ftdetect/ruby.vim - vim 6.3+ only. This won't cause problems for
 #	earlier versions; it just won't work! For versions less than 6.2 we
 #	need to create a filetype.vim file and add it to the root of the
